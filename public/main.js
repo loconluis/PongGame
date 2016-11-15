@@ -50,8 +50,8 @@
 
     self.BoardView.prototype = {
         draw: function(){
-            for (var i = this.board.element.length - 1; i>=0; i--){
-                var el = this.board.element[i];
+            for (var i = this.board.elements.length - 1; i>=0; i--){
+                var el = this.board.elements[i];
 
                 draw(this.ctx, el);
             };
